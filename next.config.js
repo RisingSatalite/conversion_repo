@@ -1,3 +1,7 @@
+// next.config.js
 module.exports = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
+  images: {
+    // image-related configuration options go here
+  },
+  // Other Next.js configuration options
 };
