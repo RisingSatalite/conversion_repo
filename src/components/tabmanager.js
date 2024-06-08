@@ -85,7 +85,7 @@ const tabs = [
 export default function TabManager() {
   return (
     <div>
-      <h1 class="" className='bg-slate-700'>Conversion.com, to enter an array of data, just enter the numbers seperated with spaces, ex"12 12 15 17"</h1>
+      <h1 class="" className='bg-slate-700'>Conversion.com, to enter an array of data, just enter the numbers seperated with spaces, ex&quot;12 12.5 15 17&quot;</h1>
       <TabController tabs={tabs} />
     </div>
   );
