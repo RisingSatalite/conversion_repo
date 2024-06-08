@@ -1,4 +1,3 @@
-// pages/index.js
 import React from 'react';
 import Tab from '../components/tabcomponent';
 import TabController from '../components/tabcontroller';
