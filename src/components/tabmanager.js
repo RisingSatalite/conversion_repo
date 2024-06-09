@@ -1,8 +1,6 @@
 import React from 'react';
-import Tab from '../components/tabcomponent';
 import TabController from '../components/tabcontroller';
 import InputConverter from './inputComponent';
-import { FahrenheitToCelsius, LbTokg, MilesTokm, kgToLb, kmToMiles } from './converterFormula';
 import InputWhichConverter from './inputAnyComponent';
 
 //All card are not appearing on the height do to the material in them, why
