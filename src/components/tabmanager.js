@@ -4,7 +4,6 @@ import InputConverter from './inputComponent';
 import InputWhichConverter from './inputAnyComponent';
 
 //All card are not appearing on the height do to the material in them, why
-
 const tabs = [
   {
     label: 'All',
