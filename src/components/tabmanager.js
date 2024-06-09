@@ -1,83 +1,34 @@
 import React from 'react';
-import Tab from '../components/tabcomponent';
 import TabController from '../components/tabcontroller';
-import InputConverter from './inputComponent';
-import { FahrenheitToCelsius, LbTokg, MilesTokm, kgToLb, kmToMiles } from './converterFormula';
-import InputWhichConverter from './inputAnyComponent';
-
+import MassFunctions from './sorting/massfunctions';
+import TempuratureFunctions from './sorting/temperaturefunctions';
+import LenghtFunctions from './sorting/lenghtfunctions';
+import AllFunctions from './sorting/allfuncitons';
 //All card are not appearing on the height do to the material in them, why
 
 const tabs = [
   {
     label: 'All',
     content: <div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Enter and check(Units have to spelt percisely)</p>
-            <InputWhichConverter buttonFunction={"whichFunction"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert Miles to Km</p>
-            <InputConverter buttonFunction={"MilesTokm"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert km to Miles</p>
-            <InputConverter buttonFunction={"kmToMiles"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert Pounds(lb) to kilograms(Kg)</p>
-            <InputConverter buttonFunction={"LbTokg"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert kilograms(Kg) to Pounds(lb)</p>
-            <InputConverter buttonFunction={"kgToLb"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p class="">Convert Fahrenheit To Celsius</p>
-            <InputConverter buttonFunction={"FahrenheitToCelsius"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert Celsius to Fahrenheit</p>
-            <InputConverter buttonFunction="CelsiusToFahrenheit" />
-        </div>
+            <AllFunctions/>
         </div>,
   },
   {
     label: 'Lenght',
     content: <div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert Miles to Km</p>
-            <InputConverter buttonFunction={"MilesTokm"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert km to Miles</p>
-            <InputConverter buttonFunction={"kmToMiles"}/>
-        </div>
+        <LenghtFunctions/>
         </div>,
   },
   {
     label: 'Mass',
     content: <div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert Pounds(lb) to kilograms(Kg)</p>
-            <InputConverter buttonFunction={"LbTokg"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert kilograms(Kg) to Pounds(lb)</p>
-            <InputConverter buttonFunction={"kgToLb"}/>
-        </div>
+        <MassFunctions/>
         </div>,
   },
   {
     label: 'Tempurature',
     content: <div className=''>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p class="">Convert Fahrenheit To Celsius</p>
-            <InputConverter buttonFunction={"FahrenheitToCelsius"}/>
-        </div>
-        <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
-            <p>Convert Celsius to Fahrenheit</p>
-            <InputConverter buttonFunction="CelsiusToFahrenheit" />
-        </div>
+        <TempuratureFunctions/>
         </div>,
   },
 ];
