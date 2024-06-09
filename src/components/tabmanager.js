@@ -1,7 +1,5 @@
 import React from 'react';
 import TabController from '../components/tabcontroller';
-import InputConverter from './inputComponent';
-import InputWhichConverter from './inputAnyComponent';
 import MassFunctions from './sorting/massfunctions';
 import TempuratureFunctions from './sorting/temperaturefunctions';
 import LenghtFunctions from './sorting/lenghtfunctions';

@@ -1,6 +1,7 @@
 import React from 'react';
 import InputWhichConverter from '../inputAnyComponent';
 
+//Other functions
 import MassFunctions from './massfunctions';
 import TempuratureFunctions from './temperaturefunctions';
 import LenghtFunctions from './lenghtfunctions';
