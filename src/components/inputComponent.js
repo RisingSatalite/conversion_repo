@@ -1,6 +1,6 @@
 // components/InputConverter.js
 import React, { useState, useEffect } from 'react';
-import { CelsiusToFahrenheit,FahrenheitToCelsius,kmToMiles,MilesTokm,kgToLb,LbTokg } from './converterFormula';
+import { CelsiusToFahrenheit,FahrenheitToCelsius,kmToMiles,MilesTokm,kgToLb,LbTokg,KelvinToCelsius,CelsiusToKelvin } from './converterFormula';
 
 function InputConverter({ buttonFunction }) {
   const [inputText, setInputText] = useState('');
@@ -71,8 +71,27 @@ function InputConverter({ buttonFunction }) {
       }
       console.log(answer);
       setConvertedText(answer);
+    } else if (buttonFunction === 'CelsiusToKelvin') {
+      let inputs = inputText.split(" ");
+      let answer = "";
+      for (const input of inputs) {
+        const newCalculatedUnit = CelsiusToKelvin(input);
+        console.log(newCalculatedUnit);
+        answer += " " + newCalculatedUnit;
+      }
+      console.log(answer);
+      setConvertedText(answer);
+    } else if (buttonFunction === 'KelvinToCelsius') {
+      let inputs = inputText.split(" ");
+      let answer = "";
+      for (const input of inputs) {
+        const newCalculatedUnit = KelvinToCelsius(input);
+        console.log(newCalculatedUnit);
+        answer += " " + newCalculatedUnit;
+      }
+      console.log(answer);
+      setConvertedText(answer);
     } else {
-      
       setConvertedText("Error, internal error");
     }
   };
