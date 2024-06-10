@@ -1,6 +1,6 @@
 // components/InputConverter.js
 import React, { useState, useEffect } from 'react';
-import { CelsiusToFahrenheit,FahrenheitToCelsius,kmToMiles,MilesTokm,kgToLb,LbTokg } from './converterFormula';
+import { CelsiusToFahrenheit,FahrenheitToCelsius,kmToMiles,MilesTokm,kgToLb,LbTokg } from './calculations/formulas';
 
 function InputConverter({ buttonFunction }) {
   const [inputText, setInputText] = useState('');
