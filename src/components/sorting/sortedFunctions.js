@@ -16,11 +16,11 @@ export default function SortedFunctions(){
                     <InputWhichConverter buttonFunction={"whichFunction"}/>
                 </div>
             </Card>
-            <div>Mass calculaters</div>
+            <div class="bg-slate-700">Mass calculaters</div>
             <MassFunctions/>
-            <div>Tempurature calculaters</div>
+            <div class="bg-slate-700">Tempurature calculaters</div>
             <TempuratureFunctions/>
-            <div>Lenght calculaters</div>
+            <div class="bg-slate-700">Lenght calculaters</div>
             <LenghtFunctions/>
         </span>
     )
