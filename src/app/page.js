@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image'
-import {whichFunction, main} from '../components/converterFormula.js'
+import {whichFunction, main} from '../components/calculations/formulas.js'
 import InputField from './inputfield.js'
 import TabManager from '@/components/tabmanager.js';
 

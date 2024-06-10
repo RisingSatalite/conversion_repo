@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { whichFunction } from './converterFormula';
+import { whichFunction } from './calculations/formulas';
 
 function InputWhichConverter({ buttonFunction }) {
   const [inputText, setInputText] = useState('');

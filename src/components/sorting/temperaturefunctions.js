@@ -1,25 +1,26 @@
 import React from 'react';
 import InputConverter from '../inputComponent';
+import { Card } from '../card';
 
 export default function TempuratureFunctions(){
     return(
-        <div>
-            <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
+        <span>
+            <Card>
                 <p class="">Convert Fahrenheit To Celsius</p>
                 <InputConverter buttonFunction={"FahrenheitToCelsius"}/>
-            </div>
-            <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
+            </Card>
+            <Card>
                 <p>Convert Celsius to Fahrenheit</p>
                 <InputConverter buttonFunction="CelsiusToFahrenheit" />
-            </div>
-            <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
+            </Card>
+            <Card>
                 <p>Convert Celsius to Kelvin</p>
                 <InputConverter buttonFunction="CelsiusToKelvin" />
-            </div>
-            <div class="h-60 w-60 bg-slate-700 m-2 inline-block">
+            </Card>
+            <Card>
                 <p>Convert Kelvin to Celsius</p>
                 <InputConverter buttonFunction="KelvinToCelsius" />
-            </div>
-        </div>
+            </Card>
+        </span>
     )
 }

@@ -1,6 +1,9 @@
-export function card(){
+export function Card({children}){
     return(
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        hello
-    </div>)
+    <span class="max-w-sm rounded overflow-hidden shadow-lg h-60 w-60 bg-slate-700 m-2 inline-block">
+        {children}
+    </span>
+    );
 }
+//class="h-60 w-60 bg-slate-700 m-2 inline-block
+//class="max-w-sm rounded overflow-hidden shadow-lg"

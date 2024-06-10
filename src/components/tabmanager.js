@@ -4,6 +4,7 @@ import MassFunctions from './sorting/massfunctions';
 import TempuratureFunctions from './sorting/temperaturefunctions';
 import LenghtFunctions from './sorting/lenghtfunctions';
 import AllFunctions from './sorting/allfuncitons';
+import SortedFunctions from './sorting/sortedFunctions';
 //All card are not appearing on the height do to the material in them, why
 
 const tabs = [
@@ -12,6 +13,12 @@ const tabs = [
     content: <div>
             <AllFunctions/>
         </div>,
+  },
+  {
+    label: 'Sorted',
+    content: <div>
+            <SortedFunctions/>
+    </div>,
   },
   {
     label: 'Lenght',

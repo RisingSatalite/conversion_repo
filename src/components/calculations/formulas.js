@@ -11,10 +11,10 @@ export function FahrenheitToCelsius(number){
     return ((number-32)*5/9)
 }
 export function CelsiusToKelvin(number){
-    return (number+273.15)
+    return (+number+273.15)
 }
 export function KelvinToCelsius(number){
-    return (number-273.15)
+    return (+number-273.15)
 }
 export function altLbTokg(number){//Alternate verison of function, if less percision is allowed
     return ((number/2)/10*9)
